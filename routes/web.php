@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-Route::post('computer', [Controller::class, 'import'])->name('computer');
+Route::get('/', [Controller::class, 'index'])->name('users');
